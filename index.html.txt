@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta - Papelería La Central</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Contenedor principal -->
+    <div class="max-w-4xl mx-auto p-6">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-blue-700">Punto de Venta - Papelería La Central</h1>
+            <p class="mt-2 text-gray-600">Administración completa del negocio</p>
+        </header>
+
+        <!-- Descripción -->
+        <section class="bg-white shadow rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-3">Descripción</h2>
+            <p>Esta aplicación ayuda a la administración de la Papelería La Central de San Felipe, Gto, facilitando la gestión de ventas, inventario y clientes.  
+            Fue desarrollada con fines educativos para que el profesor encargado de la materia pueda descargarla y probarla.</p>
+        </section>
+
+        <!-- Autores -->
+        <section class="bg-white shadow rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-3">Autores</h2>
+            <ul class="list-disc list-inside">
+                <li>Cristian Ismael Prado Salazar</li>
+                <li>Jassiel Noe Manuel Martínez</li>
+                <li>Fernando Moncada Juárez</li>
+            </ul>
+        </section>
+
+        <!-- Descarga -->
+        <section class="bg-white shadow rounded-lg p-6 mb-6 text-center">
+            <h2 class="text-2xl font-semibold mb-4">Descargar aplicación</h2>
+            <p class="mb-4">Haz clic en el botón para instalar la aplicación usando ClickOnce.</p>
+            <a href="https://IsmaelPrado.github.io/PAPELERIA_CENTRAL_DOWNLOAD/Papeleria_Central.application" 
+               class="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                Descargar App
+            </a>
+        </section>
+
+        <!-- Contacto -->
+        <section class="bg-white shadow rounded-lg p-6 text-center">
+            <h2 class="text-2xl font-semibold mb-3">Contacto</h2>
+            <p>Desarrollado por el equipo para fines educativos.</p>
+            <p>Email: <a href="mailto:vansestilo200@gmail.com" class="text-blue-600 hover:underline">cristian@example.com</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 text-gray-500">
+            <p>&copy; 2025 Papelería La Central - Todos los derechos reservados</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
