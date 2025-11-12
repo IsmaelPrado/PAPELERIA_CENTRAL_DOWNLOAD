@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto de Venta - Papelería La Central</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Efecto overlay en la imagen de fondo */
-        body {
-            background-image: url('https://images.unsplash.com/photo-1612832021576-7e37d6aa2b33?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .overlay {
-            background: rgba(0,0,0,0.7);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punto de Venta - Papelería La Central</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Imagen de fondo tipo hero, con overlay para dark mode */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4432db?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  </style>
 </head>
 <body class="text-gray-100">
 
-    <!-- Contenedor principal con overlay -->
-    <div class="overlay min-h-screen flex flex-col justify-center items-center px-4 py-12">
+  <!-- Overlay principal -->
+  <div class="overlay min-h-screen flex flex-col justify-center items-center px-6 py-12">
 
-        <!-- Header -->
-        <header class="text-center mb-12">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">Papelería La Central</h1>
-            <p class="text-gray-300 text-lg md:text-xl">Administración completa de ventas, inventario y clientes</p>
-        </header>
+    <!-- Hero Header -->
+    <header class="text-center mb-16">
+      <h1 class="text-6xl font-extrabold text-white drop-shadow-lg mb-4">Papelería La Central</h1>
+      <p class="text-gray-300 text-xl md:text-2xl max-w-2xl mx-auto">Administración completa de ventas, inventario y clientes.  
+      Una solución práctica y profesional para tu negocio.</p>
+    </header>
 
-        <!-- Card de descarga -->
-        <section class="bg-gray-900 bg-opacity-90 shadow-2xl rounded-xl p-10 max-w-2xl w-full text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Descargar la aplicación</h2>
-            <p class="text-gray-400 mb-6">Haz clic en el botón para instalar la aplicación usando ClickOnce o descarga el ZIP del release.</p>
-            <a href="https://github.com/IsmaelPrado/PAPELERIA_CENTRAL_DOWNLOAD/releases/download/v1.0.0/PapeleriaCentral.zip" 
-               class="bg-blue-600 hover:bg-blue-500 transition-colors text-white font-bold py-4 px-10 rounded-full shadow-lg inline-block text-lg">
-               Descargar App
-            </a>
-        </section>
+    <!-- Card de descarga -->
+    <section class="bg-gray-900 bg-opacity-90 rounded-3xl shadow-2xl p-12 max-w-xl w-full text-center mb-16 hover:scale-105 transform transition-all duration-300">
+      <h2 class="text-4xl font-bold mb-6">Descargar la aplicación</h2>
+      <p class="text-gray-400 mb-8">Haz clic en el botón para instalar la aplicación usando ClickOnce o descarga el ZIP del release.</p>
+      <a href="https://github.com/IsmaelPrado/PAPELERIA_CENTRAL_DOWNLOAD/releases/download/v1.0.0/PapeleriaCentral.zip"
+         class="bg-blue-600 hover:bg-blue-500 transition-colors text-white font-bold py-4 px-12 rounded-full shadow-xl text-lg inline-block">
+         Descargar App
+      </a>
+    </section>
 
-        <!-- Sección descripción -->
-        <section class="max-w-3xl w-full mb-12 text-center">
-            <h2 class="text-3xl font-bold mb-6">Descripción</h2>
-            <p class="text-gray-300 text-lg">
-                Esta aplicación ayuda a la administración de la Papelería La Central de San Felipe, Gto, facilitando la gestión de ventas, inventario y clientes.  
-                Fue desarrollada con fines educativos para que el profesor encargado pueda descargarla y probarla.
-            </p>
-        </section>
+    <!-- Sección descripción -->
+    <section class="max-w-3xl w-full mb-12 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Descripción</h2>
+      <p class="text-gray-300 text-lg">
+        Esta aplicación ayuda a la administración de la Papelería La Central de San Felipe, Gto, facilitando la gestión de ventas, inventario y clientes.  
+        Fue desarrollada con fines educativos para que el profesor encargado pueda descargarla y probarla.
+      </p>
+    </section>
 
-        <!-- Autores -->
-        <section class="max-w-3xl w-full mb-12 text-center">
-            <h2 class="text-3xl font-bold mb-6">Autores</h2>
-            <ul class="list-disc list-inside text-gray-300 text-lg">
-                <li>Cristian Ismael Prado Salazar</li>
-                <li>Jassiel Noe Manuel Martínez</li>
-                <li>Fernando Moncada Juárez</li>
-            </ul>
-        </section>
+    <!-- Autores -->
+    <section class="max-w-3xl w-full mb-12 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Autores</h2>
+      <ul class="list-disc list-inside text-gray-300 text-lg">
+        <li>Cristian Ismael Prado Salazar</li>
+        <li>Jassiel Noe Manuel Martínez</li>
+        <li>Fernando Moncada Juárez</li>
+      </ul>
+    </section>
 
-        <!-- Contacto -->
-        <section class="max-w-3xl w-full text-center">
-            <h2 class="text-3xl font-bold mb-4">Contacto</h2>
-            <p class="text-gray-400 mb-2">Desarrollado por el equipo para fines educativos.</p>
-            <p class="text-gray-400">Email: <a href="mailto:vansestilo200@gmail.com" class="text-blue-500 hover:underline">cristian@example.com</a></p>
-        </section>
+    <!-- Contacto -->
+    <section class="max-w-3xl w-full text-center mb-16">
+      <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+      <p class="text-gray-400 mb-2">Desarrollado por el equipo para fines educativos.</p>
+      <p class="text-gray-400">Email: <a href="mailto:vansestilo200@gmail.com" class="text-blue-500 hover:underline">cristian@example.com</a></p>
+    </section>
 
-        <!-- Footer -->
-        <footer class="mt-16 text-gray-500 text-center">
-            <p>&copy; 2025 Papelería La Central - Todos los derechos reservados</p>
-        </footer>
+    <!-- Footer -->
+    <footer class="text-gray-500 text-center">
+      <p>&copy; 2025 Papelería La Central - Todos los derechos reservados</p>
+    </footer>
 
-    </div>
+  </div>
 
 </body>
 </html>
