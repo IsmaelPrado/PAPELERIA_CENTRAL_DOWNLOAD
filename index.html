@@ -4,57 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto de Venta - Papelería La Central</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efecto overlay en la imagen de fondo */
+        body {
+            background-image: url('https://images.unsplash.com/photo-1612832021576-7e37d6aa2b33?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.7);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="text-gray-100">
 
-    <!-- Contenedor principal -->
-    <div class="max-w-4xl mx-auto p-6">
+    <!-- Contenedor principal con overlay -->
+    <div class="overlay min-h-screen flex flex-col justify-center items-center px-4 py-12">
 
         <!-- Header -->
-        <header class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-blue-700">Punto de Venta - Papelería La Central</h1>
-            <p class="mt-2 text-gray-600">Administración completa del negocio</p>
+        <header class="text-center mb-12">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">Papelería La Central</h1>
+            <p class="text-gray-300 text-lg md:text-xl">Administración completa de ventas, inventario y clientes</p>
         </header>
 
-        <!-- Descripción -->
-        <section class="bg-white shadow rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-semibold mb-3">Descripción</h2>
-            <p>Esta aplicación ayuda a la administración de la Papelería La Central de San Felipe, Gto, facilitando la gestión de ventas, inventario y clientes.  
-            Fue desarrollada con fines educativos para que el profesor encargado de la materia pueda descargarla y probarla.</p>
+        <!-- Card de descarga -->
+        <section class="bg-gray-900 bg-opacity-90 shadow-2xl rounded-xl p-10 max-w-2xl w-full text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Descargar la aplicación</h2>
+            <p class="text-gray-400 mb-6">Haz clic en el botón para instalar la aplicación usando ClickOnce o descarga el ZIP del release.</p>
+            <a href="https://github.com/IsmaelPrado/PAPELERIA_CENTRAL_DOWNLOAD/releases/download/v1.0.0/PapeleriaCentral.zip" 
+               class="bg-blue-600 hover:bg-blue-500 transition-colors text-white font-bold py-4 px-10 rounded-full shadow-lg inline-block text-lg">
+               Descargar App
+            </a>
+        </section>
+
+        <!-- Sección descripción -->
+        <section class="max-w-3xl w-full mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">Descripción</h2>
+            <p class="text-gray-300 text-lg">
+                Esta aplicación ayuda a la administración de la Papelería La Central de San Felipe, Gto, facilitando la gestión de ventas, inventario y clientes.  
+                Fue desarrollada con fines educativos para que el profesor encargado pueda descargarla y probarla.
+            </p>
         </section>
 
         <!-- Autores -->
-        <section class="bg-white shadow rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-semibold mb-3">Autores</h2>
-            <ul class="list-disc list-inside">
+        <section class="max-w-3xl w-full mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">Autores</h2>
+            <ul class="list-disc list-inside text-gray-300 text-lg">
                 <li>Cristian Ismael Prado Salazar</li>
                 <li>Jassiel Noe Manuel Martínez</li>
                 <li>Fernando Moncada Juárez</li>
             </ul>
         </section>
 
-        <!-- Descarga -->
-        <section class="bg-white shadow rounded-lg p-6 mb-6 text-center">
-            <h2 class="text-2xl font-semibold mb-4">Descargar aplicación</h2>
-            <p class="mb-4">Haz clic en el botón para instalar la aplicación usando ClickOnce.</p>
-            <a href="https://github.com/IsmaelPrado/PAPELERIA_CENTRAL_DOWNLOAD/releases/download/v1.0.0/PapeleriaCentral.zip" 
-   class="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
-    Descargar App
-</a>
-
-        </section>
-
         <!-- Contacto -->
-        <section class="bg-white shadow rounded-lg p-6 text-center">
-            <h2 class="text-2xl font-semibold mb-3">Contacto</h2>
-            <p>Desarrollado por el equipo para fines educativos.</p>
-            <p>Email: <a href="mailto:vansestilo200@gmail.com" class="text-blue-600 hover:underline">cristian@example.com</a></p>
+        <section class="max-w-3xl w-full text-center">
+            <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+            <p class="text-gray-400 mb-2">Desarrollado por el equipo para fines educativos.</p>
+            <p class="text-gray-400">Email: <a href="mailto:vansestilo200@gmail.com" class="text-blue-500 hover:underline">cristian@example.com</a></p>
         </section>
 
         <!-- Footer -->
-        <footer class="text-center mt-10 text-gray-500">
+        <footer class="mt-16 text-gray-500 text-center">
             <p>&copy; 2025 Papelería La Central - Todos los derechos reservados</p>
         </footer>
 
